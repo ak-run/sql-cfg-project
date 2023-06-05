@@ -63,7 +63,7 @@ CREATE TABLE customers
   FOREIGN KEY (add_id) REFERENCES cust_add (add_id)
 );
 
--- Table 8: Activity price - Activity id, activity name, activity price
+-- Table 7: Activity price - Activity id, activity name, activity price
 CREATE TABLE activities
   (act_id INT NOT NULL AUTO_INCREMENT,
   act_name VARCHAR(50),
@@ -82,3 +82,9 @@ CREATE TABLE activities_booked
   FOREIGN KEY (act_id) REFERENCES activities (act_id),
   FOREIGN KEY (bk_id) REFERENCES bookings (bk_id)
   );
+  
+-- adding foreign key to bookings
+ALTER TABLE bookings
+ADD CONSTRAINT fk_cust_id
+FOREIGN KEY (cust_id)
+REFERENCES customers(cust_id);

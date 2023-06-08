@@ -88,3 +88,6 @@ ALTER TABLE bookings
 ADD CONSTRAINT fk_cust_id
 FOREIGN KEY (cust_id)
 REFERENCES customers(cust_id);
+
+ALTER TABLE bookings
+ADD total_amount FLOAT(2);

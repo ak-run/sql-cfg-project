@@ -85,3 +85,27 @@ VALUES
 SELECT *
 FROM activities_booked;
 
+-- adding booking value to bookings table
+SET SQL_SAFE_UPDATES = 0;
+
+UPDATE bookings
+SET total_amount = CASE
+    WHEN bk_id = 1 THEN 500
+    WHEN bk_id = 2 THEN 700
+    WHEN bk_id = 3 THEN 350
+    WHEN bk_id = 4 THEN 800
+    WHEN bk_id = 5 THEN 400
+    WHEN bk_id = 6 THEN 1080
+    WHEN bk_id = 7 THEN 480
+    WHEN bk_id = 8 THEN 755
+    WHEN bk_id = 9 THEN 928
+    WHEN bk_id = 10 THEN 400
+    WHEN bk_id = 11 THEN 1950
+    WHEN bk_id = 12 THEN 888
+    WHEN bk_id = 13 THEN 500
+    WHEN bk_id = 14 THEN 1700
+    WHEN bk_id = 15 THEN 650
+END;
+
+SELECT *
+FROM bookings;

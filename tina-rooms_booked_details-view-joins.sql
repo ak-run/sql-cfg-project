@@ -74,3 +74,11 @@ CREATE VIEW activities_booked_details AS
         customers AS c
         ON c.cust_id = b.cust_id
     ORDER BY activity_booking_id;
+    
+-- Prepare and demonstrate a query that uses the view. Storms are forecast for
+-- a week starting on 9th July. Who needs to be contacted to cancel the
+-- snorkelling tour?
+SELECT f_name, l_name, phone
+FROM activities_booked_details
+WHERE act_id = 1
+  AND date_of_activity BETWEEN '2023-07-09' AND '2023-07-16';

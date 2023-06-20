@@ -12,7 +12,7 @@ DELIMITER ;
 
 SELECT *
 FROM bookings;
--- bk_id 15, total 789.98
+-- bk_id 15, total 650.00
 
 START TRANSACTION;
 INSERT INTO activities_booked(act_id, act_date, quantity, bk_id)
@@ -21,6 +21,6 @@ VALUES
 
 SELECT* 
 FROM bookings;
--- now bk_id 15, total 909.96
+-- now bk_id 15, total 769.98
 
 ROLLBACK;

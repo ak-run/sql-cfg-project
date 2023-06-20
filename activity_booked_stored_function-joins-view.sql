@@ -1,5 +1,6 @@
 -- stored function to check if a customer has booked an actiivity
 -- useful to target customers who didn't with marketing
+USE holidays_final;
 
 DELIMITER //
 CREATE FUNCTION booked_activity(bk_id INT)

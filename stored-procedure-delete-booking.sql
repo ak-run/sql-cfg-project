@@ -1,6 +1,6 @@
 -- a procedure to delete a booking from DB and all corresponding records with this booking id, 
 -- so in rooms booked and activities booked
-USE holidays;
+USE holidays_final;
 
 DELIMITER //
 CREATE PROCEDURE delete_booking(bk_id INT)

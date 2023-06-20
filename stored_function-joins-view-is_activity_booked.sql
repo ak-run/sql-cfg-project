@@ -32,7 +32,7 @@ FROM
   
 -- create a view to see join of customers and bookings and then add booked_activity column
 CREATE VIEW
-  customers_and_bookings
+  customers_and_bookings_activity
 AS
   SELECT 
     c.cust_id,
@@ -53,4 +53,4 @@ SELECT
   *,
   booked_activity(bk_id)
 FROM 
-  customers_and_bookings;
+  customers_and_bookings_activity;

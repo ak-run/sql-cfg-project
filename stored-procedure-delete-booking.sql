@@ -29,4 +29,5 @@ SELECT * FROM activities_booked;
 
 START TRANSACTION;
 CALL delete_booking(1);
+SELECT * FROM bookings;
 ROLLBACK;

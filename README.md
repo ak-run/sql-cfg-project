@@ -9,7 +9,7 @@ This is a SQL final project of SQL Kickstarter with Code First Girls. We had 3 w
 6. Prepare an example query with a subquery to demonstrate how to extract data from your DB for analysis
 7. Create DB diagram where all table relations are shown - first one created
 
-# extra features which we aim to acheive.
+# Extra features which we aim to acheive
 1. In your database, create a stored procedure and demonstrate how it runs
 2. In your database, create a trigger and demonstrate how it runs
 3. In your database, create an event and demonstrate how it runs
@@ -27,3 +27,7 @@ This is a SQL final project of SQL Kickstarter with Code First Girls. We had 3 w
 - 4 views and their function is explained in the code.
 - Query with a subquery displaying customers who spent more than 500.
 - Query showing number of bookings each month.
+
+# Future development
+- This is not a finished product but a beginning of database, and it gave us opportunity to practise SQL.
+

@@ -17,11 +17,11 @@ This is a SQL final project of SQL Kickstarter with Code First Girls. We had 3 w
 5. Prepare an example query with group by and having to demonstrate how to extract data from your DB for analysis
 
 # The database is for an accommodation provider that also sells activities, and it's called SQL Stays
-Our database contains 8 tables, all tables are connected with primary and foreign keys and the database is normalised.
-There is a stored function to show if a customer booked an activity (e.g. helpful to upsell to those customers who didn't).
-Related to that there's a trigger that updates total amount for a booking whenever an activity is booked. If it was a real company, we'd also create similar triggers to update the total when activity is cancelled, room is booked or cancelled. 
-A stored procedure allows to delete a booking from bookings, activities_booked, and rooms_booked tables all at once. 
-An event shows which rooms are checking-out, that list can be shared with housekeeping team to clean these rooms. 
+- Our database contains 8 tables, all tables are connected with primary and foreign keys and the database is normalised.
+- There is a stored function to show if a customer booked an activity (e.g. helpful to upsell to those customers who didn't).
+- Related to that there's a trigger that updates total amount for a booking whenever an activity is booked. If it was a real company, we'd also create similar triggers to update the total when activity is cancelled, room is booked or cancelled.
+- A stored procedure allows to delete a booking from bookings, activities_booked, and rooms_booked tables all at once.
+- An event shows which rooms are checking-out, that list can be shared with housekeeping team to clean these rooms. 
 
 # We also prepared
 - 4 views and their function is explained in the code.
